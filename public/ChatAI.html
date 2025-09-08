@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traco AI - Your Trading Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="All in.css" />
+</head>
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="logo-section" id="logoSection">
+            <a href="Beranda.html" style="text-decoration: none; color: inherit;" id="homeLink">
+                <img src="TradingAI_transparent.png" alt="TCF Community logo featuring modern geometric design with blue and white colors representing technology and community connection" class="logo" id="logoImg" />
+            </a>
+            <div class="brand-name" id="brandName">Traco AI</div>
+        </div>
+        <div class="navbar-controls" id="navbarControls">
+            <button class="new-chat-btn" onclick="startNewChat()" id="newChatButton">
+                <i class="bi bi-plus-lg"></i>
+                <span>Chat Baru</span>
+            </button>
+            <button class="theme-switch" onclick="toggleTheme()" id="themeToggle">
+                <i class="bi bi-sun-fill" id="themeIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <img src="TradingAI_transparent.png" alt="Watermark" class="logo-watermark" id="logoWatermark" />
+    <!-- Chat Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-wrapper" id="chatWrapper">
+            <!-- Chat messages will be appended here -->
+        </div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section" id="inputSection">
+        <div class="input-wrapper" id="inputWrapper">
+            <div class="recommendations" id="recommendations">
+                <button class="recommendation-btn" onclick="setRecommendation('Analisis EUR/USD hari ini')" id="recBtnEURUSD">
+                    Analisis EUR/USD hari ini
+                </button>
+                <button class="recommendation-btn" onclick="setRecommendation('Prediksi BTC/USDT')" id="recBtnBTCUSDT">
+                    Prediksi BTC/USDT
+                </button>
+                <button class="recommendation-btn" onclick="setRecommendation('Strategi trading untuk pemula')" id="recBtnTradingPemula">
+                    Strategi trading untuk pemula
+                </button>
+                <button class="recommendation-btn" onclick="setRecommendation('Analisis teknikal gold')" id="recBtnGold">
+                    Analisis teknikal gold
+                </button>
+            </div>
+            <div class="input-group-custom" id="inputGroup">
+                <input type="file" id="fileInput" style="display: none;" accept="image/*,.pdf,.txt,.doc,.docx" onchange="fileSelected(event)" />
+                <button class="input-btn file-upload-btn" onclick="triggerFileUpload()" id="uploadButton">
+                    <i class="bi bi-paperclip" style="font-size: 1.2rem;"></i>
+                </button>
+                <input type="text" id="messageInput" placeholder="Ketik pesan Anda..." onkeypress="handleKeyPress(event)" />
+                <div class="input-controls" id="inputControls">
+                    <button class="input-btn send-btn" onclick="sendMessage()" id="sendButton">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ChatAI.js"></script>
+</body>
+</html>

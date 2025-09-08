@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Metadata dasar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman -->
+    <title>TCF Community - Platform Komunitas dan Layanan Edukasi</title>
+
+    <!-- Link ikon Bootstrap & stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="All in.css" />
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-container">
+
+            <!-- ===== BAGIAN LOGO ===== -->
+            <div class="logo-section">
+                <a href="Beranda.html" style="text-decoration: none; color: inherit;" id="homeLink">
+                <img src="TCFX.jpg" alt="Logo TCF Community dengan desain modern warna biru dan putih" class="logo">
+                </a>
+                <div class="logo-text">Traders Community FX</div>
+            </div>
+
+            <!-- ===== MENU NAVIGASI & TOMBOL ===== -->
+            <nav class="nav-section">
+                <!-- Menu navigasi utama -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li><a href="Kalender.html">Kalender</a></li>
+                    <li><a href="ChatAI.html">Traco AI</a></li>
+                    <li><a href="Media.html">Media</a></li>
+                </ul>
+                
+                <!-- Tombol ganti tema (gelap/terang) -->
+                <button class="theme-switch" onclick="toggleTheme()" id="themeToggle">
+                    <i class="bi bi-sun-fill" id="themeIcon"></i>
+                </button>
+                
+                <!-- Tombol menu versi mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================= SLOGAN / PERINGATAN RISIKO ================= -->
+    <section class="slogan-bar">
+        <div class="slogan-content">
+            <!-- Teks berjalan berisi peringatan risiko trading -->
+            <marquee class="slogan-text">
+                Trading di pasar keuangan, termasuk forex, saham, dan cryptocurrency,
+                mengandung risiko tinggi. Pergerakan harga yang cepat dapat mengakibatkan keuntungan besar, 
+                namun juga berpotensi menyebabkan kerugian yang signifikan, termasuk kehilangan seluruh modal. 
+                Pastikan Anda memahami sepenuhnya risiko yang terlibat, memiliki strategi yang jelas, dan hanya 
+                menggunakan dana yang siap untuk Anda tanggung kerugiannya. Ingat, hasil di masa lalu tidak 
+                menjamin hasil di masa depan.
+            </marquee>
+        </div>
+    </section>
+
+    <!-- ================= KONTEN UTAMA ================= -->
+    <main class="main-content">
+
+        <!-- ===== BAGIAN HERO (Sambutan Awal) ===== -->
+        <section class="hero-section">
+            <h1 class="hero-title">Selamat Datang di Traders Community FX</h1>
+            <a href="#feature-card" class="cta-button">Jelajahi Layanan Kami</a>
+        </section>
+
+        <!-- ===== BAGIAN FITUR ===== -->
+        <section class="features-section" id="features">
+            <h2 class="section-title">Layanan dan Fitur Unggulan</h2>
+            
+            <div class="features-grid">
+
+                <!-- Fitur 1: Kalender Komunitas -->
+                <div class="feature-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/66017970-cc5e-4459-82e0-3955c0d26bb8.png" alt="Kalender komunitas" class="feature-icon">
+                    <h3 class="feature-title">Kalender Komunitas</h3>
+                    <p class="feature-description">Kelola dan ikuti berbagai acara komunitas, workshop, webinar, dan kegiatan menarik lainnya. 
+                        Dapatkan notifikasi untuk acara yang sesuai dengan minat Anda.</p>
+                </div>
+
+                <!-- Fitur 2: Asisten AI -->
+                <div class="feature-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2575b8e1-91ed-4acd-8685-e4a75ba82a42.png" alt="Asisten AI TCF" class="feature-icon">
+                    <h3 class="feature-title">TCF AI Assistant</h3>
+                    <p class="feature-description">Asisten AI cerdas yang membantu menjawab pertanyaan, memberikan rekomendasi konten, 
+                        dan memandu Anda dalam menggunakan platform dengan lebih efektif.</p>
+                </div>
+
+                <!-- Fitur 3: Forum Diskusi -->
+                <div class="feature-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/13436b74-ee34-4c9f-8411-133e971ff391.png" alt="Forum diskusi" class="feature-icon">
+                    <h3 class="feature-title">Forum Diskusi</h3>
+                    <p class="feature-description">Ruang diskusi interaktif untuk berbagi ide, mencari solusi, berkolaborasi dalam proyek, 
+                        dan membangun jaringan profesional yang kuat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BAGIAN TENTANG KAMI ===== -->
+        <section class="features-section">
+            <h2 class="section-title">Tentang Traders Community FX</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">
+                    TCF Community adalah platform digital yang didedikasikan...
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                    Dengan berbagai fitur canggih dan antarmuka yang user-friendly...
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Hak cipta -->
+            <p>©2025 Traders Community FX. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+<!-- File JavaScript eksternal -->
+<script src="Beranda.js"></script>
+</html>
